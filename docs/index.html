@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riemann zeta function and argument principle</title>
+<meta name="description" content="According to argument principle, the number of zeros and poles inside of " />
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-lg px-3 my-5 markdown-body">
+<h1>Riemann zeta function and argument principle</h1>
+
+<p>According to argument principle, the number of zeros and poles inside of 
+rectangle area of Riemann zeta function is calculated, integral by piecewise quadrature method.<br />
+Due to calculation error occurs, result which means the difference between the number of zeros and poles, 
+becomes complex number, almost integer.<br />
+mpmath is used to compute Riemann zeta function and its derivative. </p>
+
+<h2>usage  </h2>
+<h3>example 1,  first 5 non-trivial zeros rectangle area  </h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python zeta_zeros.py<br />
+vertical horizontal position [0.1, 33.0] [0.0, 1.0]<br />
+piecewise quadrature step 0.01<br />
+vertical horizontal division number  3290 100<br />
+result (4.99999386888865 + 0.00026736587192154j)<br />
+</code></pre></div></div>
+<p><img src="fig1e.png" alt="figure1" ><br /></p>
+
+
+<h3>example 2,  improvement calculation error to use smaller piecewise quadrature step. it takes more time. </h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python zeta_zeros.py -d 0.001<br />
+vertical horizontal position [0.1, 33.0] [0.0, 1.0]<br />
+piecewise quadrature step 0.001<br />
+vertical horizontal division number  32900 1000<br />
+result (4.9999999386888 + 2.67364609117596e-6j)<br />
+</code></pre></div></div>
+
+
+
+<h3>example 3,  first 5 non-trivial zeros and pole rectangle area. result, reduce one.  </h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python zeta_zeros.py -y 1.1 -a -0.1<br />
+vertical horizontal position [-0.1, 33.0] [0.0, 1.1]<br />
+piecewise quadrature step 0.01<br />
+vertical horizontal division number  3310 110<br />
+result (4.00012873370994 + 5.0342983213897e-6j)<br />
+</code></pre></div></div>
+<p><img src="fig2e.png" alt="figure2" ><br /></p>
+
+
+
+<h3>example 4, rectangle area until j100.  result, the number of zeros is 29.  </h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python zeta_zeros.py -b 100<br />
+vertical horizontal position [0.1, 100.0] [0.0, 1.0]<br />
+piecewise quadrature step 0.01<br />
+vertical horizontal division number  9990 100<br />
+result (28.9999988534685 + 0.000267366957181842j)<br />
+</code></pre></div></div>
+<p><img src="fig3e.png" alt="figure3" ><br /></p>
+
+
+
+<p>And also, zeta_zeros_colab_notebook.ipynb is a colab notebook.<br /></p>
+
+<h2>reference link </h2>
+<p><a href="https://www-users.cse.umn.edu/~odlyzko/zeta_tables/">Tables of zeros of the Riemann zeta function</a><br /></p>
+</div>
+</body>
+</html>
