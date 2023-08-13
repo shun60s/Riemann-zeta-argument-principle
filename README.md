@@ -7,7 +7,7 @@ becomes complex number, almost integer.
 mpmath is used to compute Riemann zeta function and its derivative. 
 
 ## usage  
-### example 1,  first 5 non-trivial zeros rectangle aera  
+### example 1,  first 5 non-trivial zeros rectangle area  
 ```
 python zeta_zeros.py  
 vertical horizontal position [0.1, 33.0] [0.0, 1.0]  
@@ -29,7 +29,7 @@ result (4.9999999386888 + 2.67364609117596e-6j)
 
 
 
-### example 3,  first 5 non-trivial zeros and pole rectangle aera. result, reduce one.  
+### example 3,  first 5 non-trivial zeros and pole rectangle area. result, reduce one.  
 ```
 python zeta_zeros.py -y 1.1 -a -0.1  
 vertical horizontal position [-0.1, 33.0] [0.0, 1.1]  
@@ -41,7 +41,7 @@ result (4.00012873370994 + 5.0342983213897e-6j)
 
 
 
-### example 4, rectangle aera until j100.  result, the number of zeros is 29.  
+### example 4, rectangle area until j100.  result, the number of zeros is 29.  
 ```
 python zeta_zeros.py -b 100  
 vertical horizontal position [0.1, 100.0] [0.0, 1.0]  

@@ -37,7 +37,7 @@ if __name__ == '__main__':
     
     # define rectangle
     #w0=[0.0, 1.0]  # rectangle horizontal is critical strip, real number
-    #h0=[1.0, 33.0] # rectangle vertical is first 5 non-trivial zeros aera, imaginary number
+    #h0=[1.0, 33.0] # rectangle vertical is first 5 non-trivial zeros area, imaginary number
                     #                       starts 1.0 to avoid pole 1+j0
     w0=[ args.x0, args.x1 ]
     h0=[ args.y0, args.y1 ]
