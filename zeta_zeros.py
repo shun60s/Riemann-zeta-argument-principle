@@ -5,15 +5,15 @@
 # Due to calculation error occurs, result which means the difference between the number 
 # of zeros and poles, becomes complex number, almost integer. 
 #
-# example 1
-#  first 5 non-trivial zero points of Riemann zeta function
+#
+#  first 5 non-trivial zero points of Riemann zeta function are
 #   14.134j + 1/2
 #   21.022j + 1/2
 #   25.010j + 1/2
 #   30.424j + 1/2
 #   32.935j + 1/2
-# example 2
-#  includes 1+j0  pole.
+#  and 
+#   1+j0 is pole.
 
 
 import math
@@ -36,8 +36,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     # define rectangle
-    #w0=[0.0, 1.0]  # rectangle horizontal is critical strip, real number
-    #h0=[1.0, 33.0] # rectangle vertical is first 5 non-trivial zeros area, imaginary number
+    #w0=[0.0, 1.0]  # rectangle horizontal is critical strip, real axis
+    #h0=[1.0, 33.0] # rectangle vertical is first 5 non-trivial zeros area, imaginary axis
                     #                       starts 1.0 to avoid pole 1+j0
     w0=[ args.x0, args.x1 ]
     h0=[ args.y0, args.y1 ]

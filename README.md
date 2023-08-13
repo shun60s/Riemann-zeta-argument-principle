@@ -52,5 +52,8 @@ result (28.9999988534685 + 0.000267366957181842j)
 ![figure3](docs/fig3e.png)  
 
 
+
+And also, zeta_zeros_colab_notebook.ipynb is a colab notebook.  
+
 ## reference link 
 [Tables of zeros of the Riemann zeta function](https://www-users.cse.umn.edu/~odlyzko/zeta_tables/)  
